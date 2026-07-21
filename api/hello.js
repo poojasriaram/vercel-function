@@ -1,9 +1,9 @@
-module.exports = (req, res) => {
-  const { name } = req.query;
-  
+export default function handler(request, response) {
+  const { name } = request.query;
+
   if (name) {
-    res.status(200).send(`Hello ${name}`);
+    return response.status(200).send(`Hello ${name}`);
   } else {
-    res.status(400).send('Please provide your name.');
+    return response.status(400).send('Please provide your name.');
   }
-};
+}

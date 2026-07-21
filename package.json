@@ -1,0 +1,10 @@
+{
+  "name": "vercel-hello-poc",
+  "version": "1.0.0",
+  "description": "Proof-of-concept: Vercel Serverless Function + local Node.js client script",
+  "main": "test.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "license": "MIT"
+}
